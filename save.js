@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 const request = require('request-promise')
-const ProgressBar = require('progress');
+const ProgressBar = require('progress')
 
-const base = 'https://www.instagram.com/';
+const base = 'https://www.instagram.com/'
 const api = `${base}graphql/query/?query_id=17888483320059182&variables=%7B%22id%22%3A%22{owner}%22%2C%22first%22%3A12%2C%22after%22%3A%22{cursor}%22%7D`
 
 const username = process.argv[2]
@@ -60,7 +60,7 @@ class Save {
       const edges = media.edges
       const pipes = []
       if (this.bar === null) {
-         this.bar = new ProgressBar(':bar', { total: media.count });
+         this.bar = new ProgressBar(':bar', { total: media.count })
       }
 
       edges.forEach(async edge => {
