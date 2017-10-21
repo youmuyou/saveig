@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
+  "description": "download all instagram photos",
   "dependencies": {
     "progress": "^2.0.0",
     "request": "^2.83.0",
