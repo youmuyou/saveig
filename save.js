@@ -50,9 +50,9 @@ class Save {
 
     const url = api.replace(/{owner}/, this.owner)
       .replace(/{cursor}/, this.cursor)
-    const json = await request(url)
 
     try {
+      const json = await request(url)
       const obj = JSON.parse(json)
       const media = obj.data.user.edge_owner_to_timeline_media
       this.hasNext = media.page_info.has_next_page
