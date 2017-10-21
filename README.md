@@ -9,7 +9,7 @@ cd saveig
 
 yarn
 
-node save.js {username}
+node save.js {instagram username}
 ```
 
 use online tool [saveig](https://saveig.com/)
